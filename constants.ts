@@ -1,0 +1,66 @@
+import { BusinessCardData } from './types';
+import { v4 as uuidv4 } from 'uuid';
+
+export const PANTONE_COLORS = [
+  { name: '2024 Peach Fuzz', value: '#FFBE98' },
+  { name: '2023 Viva Magenta', value: '#BE3455' },
+  { name: '2022 Very Peri', value: '#6667AB' },
+  { name: '2021 Illuminating', value: '#F5DF4D' },
+  { name: '2021 Ultimate Gray', value: '#939597' },
+  { name: '2020 Classic Blue', value: '#0F4C81' },
+  { name: '2019 Living Coral', value: '#FF6F61' },
+  { name: '2018 Ultra Violet', value: '#654EA3' },
+  { name: '2017 Greenery', value: '#88B04B' },
+  { name: '2016 Rose Quartz', value: '#F7CAC9' },
+  { name: '2016 Serenity', value: '#92A8D1' },
+  { name: '2015 Marsala', value: '#955251' },
+  { name: '2014 Radiant Orchid', value: '#B565A7' },
+  { name: '2013 Emerald', value: '#009B77' },
+  { name: '2012 Tangerine Tango', value: '#DD4124' },
+  { name: '2011 Honeysuckle', value: '#D65076' },
+  { name: '2010 Turquoise', value: '#45B8AC' },
+  { name: '2009 Mimosa', value: '#EFC050' },
+  { name: '2008 Blue Iris', value: '#5A5B9F' },
+  { name: '2007 Chili Pepper', value: '#9B1B30' },
+  { name: '2006 Sand Dollar', value: '#DECDBE' },
+  { name: '2005 Blue Turquoise', value: '#53B0AE' },
+  { name: '2004 Tigerlily', value: '#E2583E' },
+  { name: '2003 Aqua Sky', value: '#7BC4C4' },
+  { name: '2002 True Red', value: '#BF1932' },
+  { name: '2001 Fuchsia Rose', value: '#C74375' },
+  { name: '2000 Cerulean', value: '#9BB7D4' },
+];
+
+export const INITIAL_DATA: BusinessCardData = {
+  themeColor: '#FFBE98', // Peach Fuzz default
+  companyNameCN: '万犀\n科技', 
+  companyNameEN: 'WANXI TECH',
+  tagline: '万物互联 犀照灵通',
+  cardWidth: 500,
+  services: [
+    { id: '1', text: '软件开发' },
+    { id: '2', text: '微信小程序开发' },
+    { id: '3', text: '移动端 App 开发' },
+    { id: '4', text: '智能硬件解决方案' },
+    { id: '5', text: '物联网解决方案' },
+    { id: '6', text: '私有化 RAG 解决方案' },
+    { id: '7', text: '官网、商城、独立站解决方案' },
+    { id: '8', text: '诊所、民宿、美妆 SaaS 解决方案' },
+  ],
+  partners: [
+    { id: '1', text: '河北百数科技' },
+    { id: '2', text: '上海寻论遥科技' },
+    { id: '3', text: '广州市腾翔体育' },
+    { id: '4', text: '天津大学' },
+    { id: '5', text: '南京航空航天大学' },
+    { id: '6', text: '东北林业大学' },
+    { id: '7', text: '科燕新技术开发所' },
+    { id: '8', text: '上海小驴通科技' },
+    { id: '9', text: '慈济文化志业香港' },
+  ] as any,
+  contact: {
+    phone: '176 0803 0983',
+    email: 'services@wanxi-tech.cn',
+    qrData: 'https://wanxi-tech.cn',
+  },
+};
